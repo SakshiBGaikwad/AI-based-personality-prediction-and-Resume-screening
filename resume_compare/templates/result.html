@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Matcher</title>
+
+    
+	<style>
+        *{
+	font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: url('/static/result1.gif');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        /* Result */
+        .result-container {
+            padding-top: 7%;
+            color: #fff;
+            margin: 80px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+        .para{
+            font-size: medium;
+            color: #fff;
+
+        }
+/*         
+            button {
+                background-color: deepskyblue;
+                margin-top: 40%;
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                text-align: center; 
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 4px;
+                margin-top: 30%;
+} */
+        
+    </style>
+
+</head>
+<body>
+	<!-- <div class="title-container">
+		<h1>Resume Matcher</h1>
+	</div> -->
+	<div class="result-container">
+		<h1>Your resume matches the job description by {{ match_percentage }}%</h1><br><br>
+        <p class="para">Good Luck for your further career!!!</p><br>
+        <!-- <div class="return">
+        <a href="/login_portal/templates/studenthome.html"><button>Return to PersoAnalyzer</button></a>
+        </div> -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personality Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/personality_main.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="h-screen w-full flex flex-col justify-between">
+        <div class="bg-gray-900 text-white py-4 font-[Montserrat] font-semibold">
+            <ul class="flex justify-center gap-8">
+
+                <a href="http://127.0.0.1:5000/startquiz.html"><h1> Perso Analyser </h1></a>
+
+                <!-- <li><a href="\personality_index" 
+                        class="hover:tracking-widest hover:font-black transition-all duration-300">Home</a>
+                </li> -->
+
+                <li><a href="\personality_learn"
+                        class="hover:tracking-widest hover:font-black transition-all duration-300">Learn</a>
+                </li>
+
+                <!-- <li><a href="\personality_working"
+                        class="hover:tracking-widest hover:font-black transition-all duration-300">Working</a>
+                </li> -->
+
+            </ul>
+        </div>
+
+        {% block main %}
+        {% endblock %}
+
+        
+
+            <div class="text-center p-4 font-semibold" style="background-color:black; color: white;">
+                Copyright © 2023 PersoAnalyzer. All rights reserved.
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
